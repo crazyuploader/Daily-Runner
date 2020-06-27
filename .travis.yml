@@ -1,0 +1,8 @@
+os: linux
+dist: bionic
+language: python
+before_script:
+  - pip install --upgrade pip
+  - sudo pip install linkchecker
+script: |
+  linkchecker "https://jugalkishore.me"
