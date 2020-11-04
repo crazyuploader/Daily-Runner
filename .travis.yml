@@ -1,6 +1,7 @@
 os: linux
 dist: bionic
 language: python
+python: 3.8
 cache: pip
 before_script:
   - pip install --upgrade pip
