@@ -1,5 +1,5 @@
 os: linux
-dist: bionic
+dist: focal
 language: python
 python: 3.8
 cache: pip
@@ -8,3 +8,4 @@ before_script:
   - sudo pip install linkchecker
 script: |
   linkchecker https://jugalkishore.me
+  linkchecker https://til.jugalkishore.me
