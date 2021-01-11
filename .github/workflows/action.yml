@@ -3,13 +3,13 @@ name: Docker Builder
 on:
   workflow_dispatch:
     inputs:
-      BRANCH:
-        description: "Branch To Clone"
-        default: "master"
-        required: true
       GIT_URL:
         description: "Git URL"
         default: "https://bitbucket.org/yalan_bb/internet_test_tools.git"
+        required: true
+      BRANCH:
+        description: "Branch To Clone"
+        default: "master"
         required: true
 
 jobs:
@@ -33,4 +33,4 @@ jobs:
       - name: Docker Push
         run: |
           docker images
-          docker push internet_test_tools
+          docker push crazyuploader/internet_test_tools
