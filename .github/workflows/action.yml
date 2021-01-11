@@ -16,7 +16,6 @@ jobs:
   docker_build:
     runs-on: ubuntu-latest
     steps:
-
       - name: Git Clone
         run: git clone "${{ github.event.inputs.GIT_URL }}" --branch "${{ github.event.inputs.BRANCH }}"
 
@@ -24,7 +23,7 @@ jobs:
         run: |
           cd internet_test_tools
           if [[ ! -f "Dockerfile" ]]; then exit 1; else docker build -t crazyuploader/internet_test_tools:latest .; fi
-      
+
       - name: DockerHub Login
         run: echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         env:
@@ -33,5 +32,5 @@ jobs:
 
       - name: Docker Push
         run: |
-        docker images
-        docker push internet_test_tools
+          docker images
+          docker push internet_test_tools
