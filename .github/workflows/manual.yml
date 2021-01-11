@@ -1,0 +1,21 @@
+name: Manual workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch To Clone'
+        default: 'master'
+        required: true
+jobs:
+  docker_build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Git Clone
+      run: git clone "${GIT_URL}" --branch "${{ github.event.inputs.branch }}"
+      env:
+        GIT_URL: "https://bitbucket.org/yalan_bb/internet_test_tools.git"
+
+    - name: Docker Build
+      run: echo "Docker Build"
