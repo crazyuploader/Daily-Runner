@@ -7,5 +7,5 @@ before_script:
   - pip install --upgrade pip
   - sudo pip install linkchecker
 script: |
-  linkchecker https://jugalkishore.me
-  linkchecker https://til.jugalkishore.me
+  linkchecker https://devjugal.com
+  linkchecker https://til.devjugal.com
