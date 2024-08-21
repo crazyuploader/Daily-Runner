@@ -4,7 +4,7 @@ Check and validate links using Lychee.
 
 ## Status
 
-[![Links Status](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml/badge.svg?branch=devjugal-links-checker)](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml)
+[![Links](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml/badge.svg?branch=devjugal-links-checker)](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml)
 
 ## Features
 
