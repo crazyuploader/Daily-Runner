@@ -21,6 +21,7 @@ jobs:
         with:
           args: |
             https://til.devjugal.com --verbose
+          fail: true
           format: markdown
           jobSummary: true
           output: lychee/results.md
