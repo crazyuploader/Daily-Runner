@@ -20,7 +20,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
-            https://til.devjugal.com https://gitbook.devjugal.com/til --verbose
+            https://til.devjugal.com --verbose
           format: markdown
           jobSummary: true
           output:	lychee/results.md
