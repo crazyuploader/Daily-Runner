@@ -4,7 +4,7 @@ Check and validate links using Lychee.
 
 ## Status
 
-[![Links Status](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml/badge.svg?branch=til-links-checker)](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml)
+[![Links Status](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml/badge.svg?branch=devjugal-links-checker)](https://github.com/crazyuploader/Daily-Runner/actions/workflows/link-checker.yml)
 
 ## Features
 
@@ -17,4 +17,4 @@ Check and validate links using Lychee.
 
 ## More Info
 
-Visit the [TIL Website](https://til.devjugal.com) for details.
+Visit the [devjugal.com](https://devjugal.com) for details.

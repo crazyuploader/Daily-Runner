@@ -3,7 +3,7 @@ name: Links
 on:
   push:
     branches:
-      - til-links-checker
+      - devjugal-links-checker
   repository_dispatch:
   workflow_dispatch:
   schedule:
@@ -15,12 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Link Checker
+      - name: Link Checker for devjugal.com
         id: lychee
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
-            https://til.devjugal.com --verbose
+            https://devjugal.com --verbose
           fail: true
           format: markdown
           jobSummary: true
