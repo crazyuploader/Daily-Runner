@@ -23,7 +23,7 @@ jobs:
             https://til.devjugal.com --verbose
           format: markdown
           jobSummary: true
-          output:	lychee/results.md
+          output: lychee/results.md
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
