@@ -1,6 +1,9 @@
 name: Links
 
 on:
+  push:
+    branches:
+      - til-links-checker
   repository_dispatch:
   workflow_dispatch:
   schedule:
