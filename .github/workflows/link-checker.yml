@@ -3,7 +3,7 @@ name: Links
 on:
   push:
     branches:
-      - til-links-checker
+      - my-learning-journey-links-checker
   repository_dispatch:
   workflow_dispatch:
   schedule:
@@ -20,7 +20,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: |
-            https://til.devjugal.com --verbose
+            https://my-learning-journey.devjugal.com/ --verbose
           fail: true
           format: markdown
           jobSummary: true
